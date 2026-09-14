@@ -1,0 +1,101 @@
+/* css styles */
+/* General page styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+  color: #222;
+}
+
+/* Keep pages from feeling too wide */
+main.content {
+  max-width: 950px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #222;
+}
+
+h1 {
+  margin-bottom: 1.2rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #dddddd;
+}
+
+h3 {
+  margin-top: 1.5rem;
+}
+
+/* Navigation bar */
+.navbar {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Resume/download buttons */
+.btn-primary {
+  padding: 0.65rem 1.2rem;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+/* Images we add later */
+img {
+  border-radius: 7px;
+}
+
+/* Horizontal dividers */
+hr {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.25;
+}
+
+/* Better spacing for bullet lists */
+li {
+  margin-bottom: 0.3rem;
+}
+
+/* Homepage/about styling */
+.about-entity {
+  margin-top: 1rem;
+}
+
+.about-contents {
+  max-width: 800px;
+}
+
+/* Embedded resume */
+iframe {
+  margin-top: 1rem;
+  background: white;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  main.content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  iframe {
+    height: 700px !important;
+  }
+}

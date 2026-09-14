@@ -1,0 +1,27 @@
+---
+title: "Resume"
+toc: false
+---
+
+# Resume
+
+I am currently pursuing engineering opportunities related to **propulsion, fluid dynamics, aerospace systems, mechanical engineering, and experimental testing**.
+
+My current technical experience includes experimental fluid mechanics research, Particle Image Velocimetry, MATLAB data processing, high-speed imaging, mechanical design, electronics integration, fabrication, and engineering testing.
+
+[Download Resume](files/William_Ortega_Main_Resume.pdf){.btn .btn-primary target="_blank"}
+
+## Resume Preview
+
+<iframe
+  src="files/William_Ortega_Main_Resume.pdf"
+  width="100%"
+  height="1000px"
+  style="border: 1px solid #ddd; border-radius: 8px;">
+</iframe>
+
+## Contact
+
+**Email:** wortega@g.hmc.edu
+
+**LinkedIn:** [William Ortega](https://www.linkedin.com/in/william-ortega-73aa02318)
