@@ -13,14 +13,14 @@ about:
       href: https://www.linkedin.com/in/william-ortega-73aa02318
 ---
 
-## Engineering Student | Fluid Dynamics & Propulsion Research
+## Engineering Student | Propulsion, Fluid Dynamics & Experimental Engineering
 
-I am an Engineering student at Harvey Mudd College interested in **fluid dynamics, propulsion, aerospace systems, and experimental engineering**.
+I am an Engineering student at Harvey Mudd College interested in **propulsion, fluid dynamics, aerospace systems, and experimental engineering**.
 
-I currently conduct research in Harvey Mudd's Flow Imaging Research Lab, where I study **bio-inspired flapping-fin propulsion** using thrust measurements, high-speed imaging, Particle Image Velocimetry (PIV), and MATLAB-based data analysis.
+I conduct research in Harvey Mudd's Flow Imaging Research Lab, where I study **bio-inspired flapping-fin propulsion** using force measurements, high-speed imaging, Particle Image Velocimetry (PIV), and MATLAB-based data analysis.
 
-My current research investigates how fin orientation, geometry, and aspect ratio influence propulsive performance and wake dynamics. I will present this work at the **APS Division of Fluid Dynamics Annual Meeting in November 2026**.
+My research investigates how fin orientation, geometry, aspect ratio, and interaction with the free surface influence propulsive performance and wake dynamics. I will present this work at the **APS Division of Fluid Dynamics Annual Meeting in November 2026**.
 
-Outside of research, I am a co-founder and Co-President of Harvey Mudd's chapter of the **Society of Hispanic Professional Engineers (SHPE)**.
+I am also a member of the **propulsion subteam of the Mudd Amateur Rocketry Club (MARC)** and a co-founder and Co-President of Harvey Mudd's chapter of the **Society of Hispanic Professional Engineers (SHPE)**.
 
-I am currently interested in opportunities involving **propulsion, fluid mechanics, aerospace engineering, experimental testing, and mechanical systems**.
+I am currently interested in opportunities involving **propulsion, fluid and thermal systems, aerospace engineering, experimental testing, and mechanical systems**.

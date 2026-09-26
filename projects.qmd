@@ -1,141 +1,220 @@
 ---
-title: "Engineering Projects"
+title: "Projects"
 toc: true
 ---
 
-# Selected Engineering Projects
+# Engineering Projects
 
-This page highlights engineering projects involving mechanical design, electronics, fabrication, instrumentation, controls, and experimental testing.
+## Autonomous Underwater Vehicle (AUV)
 
----
+### Depth, Temperature & RGB Measurement System  
+**Harvey Mudd College — Experimental Engineering | Spring 2026 | Team of 4**
 
-## Autonomous Underwater Vehicle — Spectral Light Attenuation Measurement System
+![Completed autonomous underwater vehicle used for coastal water testing.](images/rov-complete.jpg){width=75%}
 
-**Harvey Mudd College | Spring 2026 | Team of 4**
+### Project Overview
 
-Designed and deployed an autonomous underwater vehicle to investigate how visible light intensity and spectral composition change with depth in coastal waters near kelp ecosystems.
+As part of Harvey Mudd College's Experimental Engineering course, my team designed, built, and deployed an **autonomous underwater vehicle (AUV)** to investigate how visible light changes with depth in coastal waters.
 
-![Completed autonomous underwater vehicle used for coastal deployment and underwater sensor measurements.](images/rov-complete.jpg){width=65%}
+The system measured:
 
-*Final AUV integrating the structural frame, electronics housing, propulsion system, and environmental sensors.*
+- Spectral light intensity using an RGB sensor
+- Water pressure for depth estimation
+- Water temperature
+- Depth-resolved sensor data during autonomous dives
 
-### My Work
+The vehicle was deployed off **Dana Point, California**, where we collected measurements to approximately **3 m depth**.
 
-- Designed and assembled the PVC structural frame and motor system
-- Integrated electronic components into the underwater platform
-- Designed and soldered circuitry for pressure and temperature sensing
-- Integrated a **TCS34725 RGB sensor**, **MPX5700 pressure sensor**, and thermistor with a Teensy 4.1
-- Implemented and tested autonomous depth-control behavior
-- Collected and processed depth-resolved environmental measurements
-- Supported coastal deployment and experimental troubleshooting
+### System Design
 
-### Technical Report
+The AUV used a PVC structural frame containing its propulsion system, electronics enclosure, sensors, and data-acquisition hardware.
 
-The complete project report documents the vehicle design, sensor circuitry, calibration, autonomous control, coastal deployment, and experimental results.
+The sensing system included:
 
-[Open Full Project Report](files/Final_Report_William_Ortega.pdf){.btn .btn-primary target="_blank"}
+- **TCS34725 RGB sensor** for visible-light measurements
+- **MPX5700 pressure sensor** for depth estimation
+- **NTC thermistor** for temperature measurement
+- **Teensy 4.1 microcontroller**
+- microSD storage for synchronized experimental data
+
+The vehicle used motor-driven vertical motion and proportional feedback control to autonomously reach commanded depths.
+
+### My Contributions
+
+My work on the project included:
+
+- Designing and assembling portions of the AUV mechanical structure and motor system
+- Designing and soldering sensor and data-acquisition circuitry
+- Integrating pressure, temperature, and RGB sensors with a **Teensy 4.1**
+- Developing pressure-sensor signal-conditioning circuitry
+- Calibrating sensor voltage to water depth
+- Implementing and testing proportional depth control
+- Debugging electrical noise and sensor interference during motor operation
+- Supporting field deployment and experimental data collection
+- Processing experimental data in **MATLAB**
+
+### Pressure Measurement & Signal Conditioning
+
+The MPX5700 pressure sensor required signal conditioning before its output could be measured effectively by the Teensy's ADC.
+
+I designed a **two-stage MCP6002 op-amp circuit** with a gain of approximately **6.87** to scale and offset the pressure-sensor output into the Teensy's usable **0.3–3.3 V ADC range**.
+
+This prevented signal clipping while improving measurement resolution.
+
+The pressure sensor was then calibrated in water using a linear voltage-to-depth relationship.
+
+### Autonomous Depth Control
+
+The AUV used **proportional feedback control** to reach commanded depths.
+
+Pressure measurements were converted to estimated depth, and the resulting error was used to command the vertical motors.
+
+During testing, we observed electrical interference in sensor measurements while the motors were operating. To isolate the source, we performed dedicated motor-off testing and modified the measurement sequence so that sensor readings were collected during **motors-off holds**.
+
+This improved measurement reliability during depth-controlled operation.
+
+### Data Analysis
+
+Experimental data were processed in **MATLAB**.
+
+The analysis included:
+
+- Sensor calibration
+- Depth reconstruction from pressure measurements
+- Per-channel RGB calibration
+- Surface-reference normalization
+- Beer–Lambert-based transmission analysis
+- Comparison of red, green, and blue attenuation with depth
+
+During field testing, measurements showed **more than 80% loss of surface light by approximately 3 m depth**, with the red channel attenuating most rapidly.
+
+### Final Report
+
+The complete experimental design, analysis, results, and discussion are available in the project report.
+
+[**View Final Report**](files/Final_Report_William_Ortega.pdf){.btn .btn-primary}
 
 <iframe
   src="files/Final_Report_William_Ortega.pdf"
   width="100%"
-  height="800px"
-  style="border: 1px solid #ddd; border-radius: 8px;">
+  height="800px">
 </iframe>
-
-### Tools & Skills
-
-**Teensy 4.1 • MATLAB • Sensors • Circuit Design • Soldering • Data Acquisition • Feedback Control • Experimental Testing**
 
 ---
 
-## Mobile Lectern — Client Design Project
+# Mobile Lectern
 
-**Harvey Mudd College | Fall 2025 | Team of 4**
-
-Worked with a faculty client to design a lightweight, portable lectern that could be rapidly assembled and disassembled for classroom use.
+### Client Design Project  
+**Harvey Mudd College — Introduction to Engineering Design & Manufacturing | Fall 2025 | Team of 4**
 
 :::: {.columns}
 
 ::: {.column width="50%"}
 
-<img
-  src="images/lectern-final.jpg"
-  alt="Final assembled mobile lectern."
-  style="width:100%; height:300px; object-fit:contain; display:block; margin:auto;">
-
-*Final assembled configuration.*
+<div style="text-align:center;">
+  <img
+    src="images/lectern-final.jpg"
+    alt="Final assembled portable lectern."
+    style="width:100%; height:280px; object-fit:contain; display:block; margin:auto;">
+  <p style="margin-top:8px; color:#666; font-size:0.95rem;">
+    Final assembled portable lectern.
+  </p>
+</div>
 
 :::
 
 ::: {.column width="50%"}
 
-<img
-  src="images/lectern-collapsed.jpg"
-  alt="Collapsed mobile lectern."
-  style="width:100%; height:300px; object-fit:contain; display:block; margin:auto;">
-
-*Collapsed configuration for portability.*
+<div style="text-align:center;">
+  <img
+    src="images/lectern-collapsed.jpg"
+    alt="Lectern in its collapsed configuration."
+    style="width:100%; height:280px; object-fit:contain; display:block; margin:auto;">
+  <p style="margin-top:8px; color:#666; font-size:0.95rem;">
+    Lectern in its collapsed configuration.
+  </p>
+</div>
 
 :::
 
 ::::
 
+### Project Overview
+
+My team designed and fabricated a lightweight, portable lectern for a Harvey Mudd faculty client.
+
+The primary design requirements included:
+
+- Rapid assembly and disassembly
+- Easy transportation and storage
+- Sufficient strength for classroom use
+- Low manufacturing cost
+- Simple and repeatable operation
+
+The resulting design, called **Accordion Stretch**, used a collapsible five-panel structure with removable wings and grip surfaces.
+
 ### Design Process
 
-- Interviewed the client to identify functional and human-factors requirements
-- Translated stakeholder needs into engineering specifications
-- Developed and evaluated multiple design concepts
-- Created SolidWorks models and engineering drawings
-- Fabricated and tested iterative prototypes
-- Evaluated setup time, portability, durability, and usability
+Our design process included:
+
+- Translating client needs into measurable engineering requirements
+- Generating and evaluating multiple concepts
+- Creating CAD models in **SolidWorks**
+- Building and testing physical prototypes
+- Iterating based on usability and structural testing
+- Developing manufacturing documentation for the final design
 
 ### Final Design
 
-The final design:
+The final prototype achieved:
 
-- Achieved an average setup time of approximately **1.6 seconds**
-- Supported loads greater than **12 lb**
-- Used a collapsible five-panel structure
-- Included removable support wings and grip surfaces
-- Was produced for approximately **$24 in prototype materials**
+- Approximately **1.6-second setup time**
+- Support for loads greater than **12 lb**
+- Compact collapsible geometry
+- Five-panel construction
+- Removable support wings
+- Approximately **$24 in prototype material cost**
 
-### Engineering Drawing Package
+The final deliverables included a **SolidWorks drawing package, bill of materials, and manufacturing process router**.
 
-The final SolidWorks drawing package documents the complete assembly, individual panels, support wings, fabrication details, process routing, and bill of materials.
+### Engineering Drawings
 
-[Open Full Drawing Package](files/Mobile_Lectern_Drawings.pdf){.btn .btn-primary target="_blank"}
+[**View Drawing Package**](files/Mobile_Lectern_Drawings.pdf){.btn .btn-primary}
 
 <iframe
   src="files/Mobile_Lectern_Drawings.pdf"
   width="100%"
-  height="800px"
-  style="border: 1px solid #ddd; border-radius: 8px;">
+  height="800px">
 </iframe>
-
-### Tools & Skills
-
-**SolidWorks • Mechanical Design • Engineering Drawings • Prototyping • Fabrication • Client Communication • Design Testing**
 
 ---
 
-## Hammer — Machining Project
+# Machinist's Hammer
 
+### Manufacturing Project  
 **Harvey Mudd College | Fall 2025**
 
-Fabricated a functional hammer from raw stock while developing precision machining and manufacturing skills.
+![Completed machinist's hammer manufactured from raw steel and nylon stock.](images/hammer-final.jpg){width=60%}
 
-![Finished machined hammer.](images/hammer-final.jpg){width=60%}
+### Project Overview
 
-*Completed hammer fabricated from raw stock using manual machining processes.*
+I manufactured a machinist's hammer from raw steel and nylon stock using manual machining processes.
 
-### My Work
+The project emphasized precision manufacturing, interpretation of engineering drawings, proper machine setup, and process planning.
 
-- Machined hammer components using a mill and lathe
-- Used a bandsaw and other shop equipment for stock preparation
-- Worked from engineering drawings and specified dimensions
-- Maintained required dimensional tolerances during fabrication
-- Evaluated hardface hardness requirements after machining
+### Manufacturing Experience
 
-### Tools & Skills
+I used:
 
-**Milling • Turning • Lathe • Bandsaw • Engineering Drawings • Measurement • Manufacturing**
+- Manual mill
+- Manual lathe
+- Bandsaw
+- Drilling
+- Tapping
+- Heat treatment
+- Tempering
+- Precision measurement tools
+
+I calibrated and operated manual mills and lathes to manufacture components to **thousandths-of-an-inch dimensional specifications**, following engineering drawings and a defined process router.
+
+The project strengthened my experience with **manual machining, tolerances, fabrication, and manufacturing processes**.
