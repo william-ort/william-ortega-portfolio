@@ -136,12 +136,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#flow-imaging-research-lab-harvey-mudd-college" id="toc-flow-imaging-research-lab-harvey-mudd-college" class="nav-link" data-scroll-target="#flow-imaging-research-lab-harvey-mudd-college">Flow Imaging Research Lab — Harvey Mudd College</a></li>
   <li><a href="#research-focus" id="toc-research-focus" class="nav-link" data-scroll-target="#research-focus">Research Focus</a></li>
   <li><a href="#my-contributions" id="toc-my-contributions" class="nav-link" data-scroll-target="#my-contributions">My Contributions</a></li>
+  <li><a href="#key-results" id="toc-key-results" class="nav-link" data-scroll-target="#key-results">Key Results</a></li>
   <li><a href="#experimental-methods" id="toc-experimental-methods" class="nav-link" data-scroll-target="#experimental-methods">Experimental Methods</a>
   <ul class="collapse">
-  <li><a href="#thrust-measurements" id="toc-thrust-measurements" class="nav-link" data-scroll-target="#thrust-measurements">Thrust Measurements</a></li>
+  <li><a href="#thrust-measurement" id="toc-thrust-measurement" class="nav-link" data-scroll-target="#thrust-measurement">Thrust Measurement</a></li>
   <li><a href="#particle-image-velocimetry" id="toc-particle-image-velocimetry" class="nav-link" data-scroll-target="#particle-image-velocimetry">Particle Image Velocimetry</a></li>
   </ul></li>
-  <li><a href="#current-research" id="toc-current-research" class="nav-link" data-scroll-target="#current-research">Current Research</a></li>
+  <li><a href="#aspect-ratio-and-surface-crossing-experiments" id="toc-aspect-ratio-and-surface-crossing-experiments" class="nav-link" data-scroll-target="#aspect-ratio-and-surface-crossing-experiments">Aspect-Ratio and Surface-Crossing Experiments</a></li>
+  <li><a href="#tools-methods" id="toc-tools-methods" class="nav-link" data-scroll-target="#tools-methods">Tools &amp; Methods</a></li>
   <li><a href="#conference-presentation" id="toc-conference-presentation" class="nav-link" data-scroll-target="#conference-presentation">Conference Presentation</a></li>
   </ul></li>
   </ul>
@@ -173,8 +175,9 @@ ul.task-list li input[type="checkbox"] {
 <h1>Bio-Inspired Propulsion</h1>
 <section id="flow-imaging-research-lab-harvey-mudd-college" class="level2">
 <h2 class="anchored" data-anchor-id="flow-imaging-research-lab-harvey-mudd-college">Flow Imaging Research Lab — Harvey Mudd College</h2>
-<p>I conduct experimental research in Harvey Mudd College’s Flow Imaging Research Lab, studying <strong>bio-inspired flapping-fin propulsion</strong> and how fin geometry and operating conditions affect thrust production and wake dynamics.</p>
-<p>My current work focuses on <strong>horizontal fin configurations and aspect-ratio effects</strong>, with comparisons to previously studied vertical, surface-crossing configurations.</p>
+<p>I conduct experimental research in Harvey Mudd College’s Flow Imaging Research Lab, studying <strong>bio-inspired flapping-fin propulsion</strong> and how fin geometry, orientation, operating conditions, and interaction with the free surface affect thrust production and wake dynamics.</p>
+<p>My work combines <strong>force measurement, high-speed imaging, Particle Image Velocimetry (PIV), experimental fixture design, and MATLAB-based data processing</strong> to characterize propulsive performance across different fin configurations.</p>
+<p>My current research focuses on <strong>horizontal fully submerged fins and aspect-ratio effects</strong>, with direct comparisons to previously studied vertical, surface-crossing configurations.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/film-setup-horizontal.png" class="img-fluid figure-img" style="width:85.0%"></p>
@@ -184,57 +187,97 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="research-focus" class="level2">
 <h2 class="anchored" data-anchor-id="research-focus">Research Focus</h2>
-<p>The project investigates how changes in fin geometry and operating conditions influence propulsive performance.</p>
-<p>Parameters I have worked with include:</p>
+<p>The project investigates how changes in fin geometry and operating conditions influence thrust production and wake structure.</p>
+<p>Parameters I have investigated include:</p>
 <ul>
 <li>Actuation frequencies from <strong>1–3 Hz</strong></li>
-<li>Multiple fin thicknesses from <strong>1/32 in to 1/8 in</strong></li>
+<li>Fin thicknesses from <strong>1/32 in to 1/8 in</strong></li>
 <li>Multiple fin aspect ratios and geometries</li>
 <li>Horizontal and vertical fin orientations</li>
 <li>Fully submerged and surface-crossing configurations</li>
+<li>Multiple submersion depths for surface-crossing fins</li>
 </ul>
+<p>These experiments allow us to evaluate how both fin design and free-surface interaction influence propulsion performance.</p>
 </section>
 <section id="my-contributions" class="level2">
 <h2 class="anchored" data-anchor-id="my-contributions">My Contributions</h2>
-<p>My work includes:</p>
+<p>My work has included:</p>
 <ul>
-<li>Running water-tank propulsion experiments across different fin configurations</li>
+<li>Designing and modifying experimental fixtures for horizontal-fin testing</li>
+<li>Running <strong>100+ horizontal-fin trials</strong> across fin thickness, amplitude, and frequency</li>
+<li>Running <strong>100+ surface-crossing trials</strong> across aspect ratio, frequency, and submersion depth</li>
+<li>Maintaining flapping frequency within approximately <strong>±0.02 Hz</strong> for repeatable comparisons</li>
+<li>Measuring forces using an <strong>ATI Mini40 six-axis load cell</strong> and <strong>NI DAQ</strong></li>
+<li>Redesigning MATLAB thrust-processing code for horizontal configurations</li>
+<li>Processing and comparing thrust coefficients across experimental configurations</li>
 <li>Setting up and positioning high-speed cameras</li>
-<li>Aligning the laser sheet used for Particle Image Velocimetry (PIV)</li>
-<li>Modifying experimental setups for horizontal-fin testing</li>
-<li>Adapting MATLAB thrust-processing code for horizontal configurations</li>
-<li>Processing thrust and force data</li>
-<li>Comparing thrust coefficients across experimental configurations</li>
-<li>Performing PIV analysis to study velocity fields, wake structures, and vorticity</li>
+<li>Aligning the laser sheet used for Particle Image Velocimetry</li>
+<li>Adapting the PIV workflow for horizontal-fin experiments</li>
+<li>Processing velocity fields and examining wake and vortex structures in MATLAB using <strong>PIVlab</strong></li>
 </ul>
+</section>
+<section id="key-results" class="level2">
+<h2 class="anchored" data-anchor-id="key-results">Key Results</h2>
+<p>Across the configurations tested, fully submerged horizontal fins produced <strong>higher thrust coefficients than surface-crossing fins in most cases</strong>.</p>
+<p>The highest measured thrust coefficient was approximately:</p>
+<p>[ C_T = 4.16 ]</p>
+<p>for a <strong>1/16-in-thick fin</strong> in the horizontal, fully submerged configuration.</p>
+<p>These results provide a direct experimental comparison between fully submerged and surface-crossing flapping-fin propulsion and help quantify how interaction with the free surface influences thrust production.</p>
 </section>
 <section id="experimental-methods" class="level2">
 <h2 class="anchored" data-anchor-id="experimental-methods">Experimental Methods</h2>
-<section id="thrust-measurements" class="level3">
-<h3 class="anchored" data-anchor-id="thrust-measurements">Thrust Measurements</h3>
-<p>For each configuration, experimental trials are conducted across different operating conditions. Force measurements are processed in MATLAB to evaluate thrust performance and compare configurations.</p>
+<section id="thrust-measurement" class="level3">
+<h3 class="anchored" data-anchor-id="thrust-measurement">Thrust Measurement</h3>
+<p>Fin-generated forces are measured using an <strong>ATI Mini40 six-axis force/torque sensor</strong> connected through an <strong>NI data-acquisition system</strong>.</p>
+<p>For each fin configuration, trials are performed across controlled combinations of geometry and operating conditions. The resulting force signals are processed in MATLAB to calculate thrust performance and nondimensional thrust coefficient.</p>
+<p>To support horizontal-fin testing, I redesigned portions of the lab’s existing thrust-processing pipeline.</p>
+<p>This included:</p>
+<ul>
+<li>Remapping the measured force axis corresponding to thrust</li>
+<li>Revising inertial corrections using measurements from in-air trials</li>
+<li>Adapting the processing workflow for the horizontal experimental geometry</li>
+<li>Enabling direct thrust-coefficient comparisons between horizontal and vertical configurations</li>
+</ul>
+<p>This processing pipeline allowed horizontal-fin results to be evaluated against the lab’s existing vertical, surface-crossing experimental baselines.</p>
 </section>
 <section id="particle-image-velocimetry" class="level3">
 <h3 class="anchored" data-anchor-id="particle-image-velocimetry">Particle Image Velocimetry</h3>
-<p>Particle Image Velocimetry is used to visualize and quantify the flow generated by the fin.</p>
+<p>Particle Image Velocimetry is used to measure the velocity field generated by the oscillating fin and visualize the resulting wake.</p>
 <p>My role in the PIV workflow includes:</p>
 <ol type="1">
 <li>Positioning and configuring the high-speed camera</li>
 <li>Aligning the laser sheet with the measurement plane</li>
 <li>Collecting high-speed image sequences</li>
-<li>Processing experimental images</li>
-<li>Analyzing velocity fields and vorticity structures</li>
+<li>Processing experimental images in PIVlab</li>
+<li>Correcting optical artifacts caused by reflections from the load cell</li>
+<li>Analyzing velocity fields and trailing-edge vortex structures</li>
 </ol>
+<p>For the horizontal configuration, I adapted the existing PIV workflow and implemented a <strong>spline-based correction method</strong> to reduce interference from load-cell reflections in the measurement region.</p>
+<p>The resulting velocity fields allow us to connect changes in measured thrust with changes in wake structure and vortex formation.</p>
 </section>
 </section>
-<section id="current-research" class="level2">
-<h2 class="anchored" data-anchor-id="current-research">Current Research</h2>
-<p>I am currently investigating how <strong>fin aspect ratio</strong> affects propulsion performance.</p>
-<p>These experiments vary fin geometry while maintaining controlled operating conditions, allowing us to compare thrust production and wake behavior across different aspect ratios.</p>
+<section id="aspect-ratio-and-surface-crossing-experiments" class="level2">
+<h2 class="anchored" data-anchor-id="aspect-ratio-and-surface-crossing-experiments">Aspect-Ratio and Surface-Crossing Experiments</h2>
+<p>A major portion of my current research investigates how <strong>fin aspect ratio and free-surface exposure</strong> affect propulsive performance.</p>
+<p>For the surface-crossing experiments, I conducted more than <strong>100 trials</strong> while varying:</p>
+<ul>
+<li>Fin aspect ratio</li>
+<li>Flapping frequency</li>
+<li>Submersion depth from fully submerged to partially exposed configurations</li>
+</ul>
+<p>By maintaining controlled operating conditions and consistent flapping frequency, these experiments allow thrust performance to be compared across different fin geometries and levels of free-surface interaction.</p>
+<p>The resulting data are being analyzed alongside the horizontal-fin experiments to better understand the relationship between <strong>fin geometry, submersion, thrust production, and wake dynamics</strong>.</p>
+</section>
+<section id="tools-methods" class="level2">
+<h2 class="anchored" data-anchor-id="tools-methods">Tools &amp; Methods</h2>
+<p><strong>Experimental:</strong> Particle Image Velocimetry (PIV), high-speed imaging, six-axis force measurement, NI data acquisition, laser alignment, experimental fixture design</p>
+<p><strong>Analysis:</strong> MATLAB, PIVlab, thrust-coefficient analysis, velocity-field processing, vortex/wake analysis</p>
+<p><strong>Hardware:</strong> ATI Mini40 six-axis load cell, NI DAQ, high-speed camera, laser-sheet PIV system</p>
 </section>
 <section id="conference-presentation" class="level2">
 <h2 class="anchored" data-anchor-id="conference-presentation">Conference Presentation</h2>
-<p>This work will be presented at the <strong>APS Division of Fluid Dynamics Annual Meeting in November 2026</strong>, focusing on horizontal-fin configurations and aspect-ratio effects in bio-inspired propulsion.</p>
+<p>I will present this research at the <strong>APS Division of Fluid Dynamics Annual Meeting in November 2026</strong>.</p>
+<p>The presentation focuses on experimental results from <strong>horizontal fully submerged fin configurations and fin aspect-ratio studies</strong>, including comparisons of thrust performance and wake behavior across different operating conditions.</p>
 
 
 </section>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Engineering Projects – William Ortega | Engineering Portfolio</title>
+<title>Projects – William Ortega | Engineering Portfolio</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -131,26 +131,33 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#selected-engineering-projects" id="toc-selected-engineering-projects" class="nav-link active" data-scroll-target="#selected-engineering-projects">Selected Engineering Projects</a>
+  <li><a href="#engineering-projects" id="toc-engineering-projects" class="nav-link active" data-scroll-target="#engineering-projects">Engineering Projects</a>
   <ul class="collapse">
-  <li><a href="#autonomous-underwater-vehicle-spectral-light-attenuation-measurement-system" id="toc-autonomous-underwater-vehicle-spectral-light-attenuation-measurement-system" class="nav-link" data-scroll-target="#autonomous-underwater-vehicle-spectral-light-attenuation-measurement-system">Autonomous Underwater Vehicle — Spectral Light Attenuation Measurement System</a>
+  <li><a href="#autonomous-underwater-vehicle-auv" id="toc-autonomous-underwater-vehicle-auv" class="nav-link" data-scroll-target="#autonomous-underwater-vehicle-auv">Autonomous Underwater Vehicle (AUV)</a>
   <ul class="collapse">
-  <li><a href="#my-work" id="toc-my-work" class="nav-link" data-scroll-target="#my-work">My Work</a></li>
-  <li><a href="#technical-report" id="toc-technical-report" class="nav-link" data-scroll-target="#technical-report">Technical Report</a></li>
-  <li><a href="#tools-skills" id="toc-tools-skills" class="nav-link" data-scroll-target="#tools-skills">Tools &amp; Skills</a></li>
+  <li><a href="#depth-temperature-rgb-measurement-system" id="toc-depth-temperature-rgb-measurement-system" class="nav-link" data-scroll-target="#depth-temperature-rgb-measurement-system">Depth, Temperature &amp; RGB Measurement System</a></li>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#system-design" id="toc-system-design" class="nav-link" data-scroll-target="#system-design">System Design</a></li>
+  <li><a href="#my-contributions" id="toc-my-contributions" class="nav-link" data-scroll-target="#my-contributions">My Contributions</a></li>
+  <li><a href="#pressure-measurement-signal-conditioning" id="toc-pressure-measurement-signal-conditioning" class="nav-link" data-scroll-target="#pressure-measurement-signal-conditioning">Pressure Measurement &amp; Signal Conditioning</a></li>
+  <li><a href="#autonomous-depth-control" id="toc-autonomous-depth-control" class="nav-link" data-scroll-target="#autonomous-depth-control">Autonomous Depth Control</a></li>
+  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis">Data Analysis</a></li>
+  <li><a href="#final-report" id="toc-final-report" class="nav-link" data-scroll-target="#final-report">Final Report</a></li>
   </ul></li>
-  <li><a href="#mobile-lectern-client-design-project" id="toc-mobile-lectern-client-design-project" class="nav-link" data-scroll-target="#mobile-lectern-client-design-project">Mobile Lectern — Client Design Project</a>
+  </ul></li>
+  <li><a href="#mobile-lectern" id="toc-mobile-lectern" class="nav-link" data-scroll-target="#mobile-lectern">Mobile Lectern</a>
   <ul class="collapse">
+  <li><a href="#client-design-project" id="toc-client-design-project" class="nav-link" data-scroll-target="#client-design-project">Client Design Project</a></li>
+  <li><a href="#project-overview-1" id="toc-project-overview-1" class="nav-link" data-scroll-target="#project-overview-1">Project Overview</a></li>
   <li><a href="#design-process" id="toc-design-process" class="nav-link" data-scroll-target="#design-process">Design Process</a></li>
   <li><a href="#final-design" id="toc-final-design" class="nav-link" data-scroll-target="#final-design">Final Design</a></li>
-  <li><a href="#engineering-drawing-package" id="toc-engineering-drawing-package" class="nav-link" data-scroll-target="#engineering-drawing-package">Engineering Drawing Package</a></li>
-  <li><a href="#tools-skills-1" id="toc-tools-skills-1" class="nav-link" data-scroll-target="#tools-skills-1">Tools &amp; Skills</a></li>
+  <li><a href="#engineering-drawings" id="toc-engineering-drawings" class="nav-link" data-scroll-target="#engineering-drawings">Engineering Drawings</a></li>
   </ul></li>
-  <li><a href="#hammer-machining-project" id="toc-hammer-machining-project" class="nav-link" data-scroll-target="#hammer-machining-project">Hammer — Machining Project</a>
+  <li><a href="#machinists-hammer" id="toc-machinists-hammer" class="nav-link" data-scroll-target="#machinists-hammer">Machinist’s Hammer</a>
   <ul class="collapse">
-  <li><a href="#my-work-1" id="toc-my-work-1" class="nav-link" data-scroll-target="#my-work-1">My Work</a></li>
-  <li><a href="#tools-skills-2" id="toc-tools-skills-2" class="nav-link" data-scroll-target="#tools-skills-2">Tools &amp; Skills</a></li>
-  </ul></li>
+  <li><a href="#manufacturing-project" id="toc-manufacturing-project" class="nav-link" data-scroll-target="#manufacturing-project">Manufacturing Project</a></li>
+  <li><a href="#project-overview-2" id="toc-project-overview-2" class="nav-link" data-scroll-target="#project-overview-2">Project Overview</a></li>
+  <li><a href="#manufacturing-experience" id="toc-manufacturing-experience" class="nav-link" data-scroll-target="#manufacturing-experience">Manufacturing Experience</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -160,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Engineering Projects</h1>
+<h1 class="title">Projects</h1>
 </div>
 
 
@@ -177,121 +184,201 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="selected-engineering-projects" class="level1">
-<h1>Selected Engineering Projects</h1>
-<p>This page highlights engineering projects involving mechanical design, electronics, fabrication, instrumentation, controls, and experimental testing.</p>
-<hr>
-<section id="autonomous-underwater-vehicle-spectral-light-attenuation-measurement-system" class="level2">
-<h2 class="anchored" data-anchor-id="autonomous-underwater-vehicle-spectral-light-attenuation-measurement-system">Autonomous Underwater Vehicle — Spectral Light Attenuation Measurement System</h2>
-<p><strong>Harvey Mudd College | Spring 2026 | Team of 4</strong></p>
-<p>Designed and deployed an autonomous underwater vehicle to investigate how visible light intensity and spectral composition change with depth in coastal waters near kelp ecosystems.</p>
+<section id="engineering-projects" class="level1">
+<h1>Engineering Projects</h1>
+<section id="autonomous-underwater-vehicle-auv" class="level2">
+<h2 class="anchored" data-anchor-id="autonomous-underwater-vehicle-auv">Autonomous Underwater Vehicle (AUV)</h2>
+<section id="depth-temperature-rgb-measurement-system" class="level3">
+<h3 class="anchored" data-anchor-id="depth-temperature-rgb-measurement-system">Depth, Temperature &amp; RGB Measurement System</h3>
+<p><strong>Harvey Mudd College — Experimental Engineering | Spring 2026 | Team of 4</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/rov-complete.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
-<figcaption>Completed autonomous underwater vehicle used for coastal deployment and underwater sensor measurements.</figcaption>
+<p><img src="images/rov-complete.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption>Completed autonomous underwater vehicle used for coastal water testing.</figcaption>
 </figure>
 </div>
-<p><em>Final AUV integrating the structural frame, electronics housing, propulsion system, and environmental sensors.</em></p>
-<section id="my-work" class="level3">
-<h3 class="anchored" data-anchor-id="my-work">My Work</h3>
+</section>
+<section id="project-overview" class="level3">
+<h3 class="anchored" data-anchor-id="project-overview">Project Overview</h3>
+<p>As part of Harvey Mudd College’s Experimental Engineering course, my team designed, built, and deployed an <strong>autonomous underwater vehicle (AUV)</strong> to investigate how visible light changes with depth in coastal waters.</p>
+<p>The system measured:</p>
 <ul>
-<li>Designed and assembled the PVC structural frame and motor system</li>
-<li>Integrated electronic components into the underwater platform</li>
-<li>Designed and soldered circuitry for pressure and temperature sensing</li>
-<li>Integrated a <strong>TCS34725 RGB sensor</strong>, <strong>MPX5700 pressure sensor</strong>, and thermistor with a Teensy 4.1</li>
-<li>Implemented and tested autonomous depth-control behavior</li>
-<li>Collected and processed depth-resolved environmental measurements</li>
-<li>Supported coastal deployment and experimental troubleshooting</li>
+<li>Spectral light intensity using an RGB sensor</li>
+<li>Water pressure for depth estimation</li>
+<li>Water temperature</li>
+<li>Depth-resolved sensor data during autonomous dives</li>
+</ul>
+<p>The vehicle was deployed off <strong>Dana Point, California</strong>, where we collected measurements to approximately <strong>3 m depth</strong>.</p>
+</section>
+<section id="system-design" class="level3">
+<h3 class="anchored" data-anchor-id="system-design">System Design</h3>
+<p>The AUV used a PVC structural frame containing its propulsion system, electronics enclosure, sensors, and data-acquisition hardware.</p>
+<p>The sensing system included:</p>
+<ul>
+<li><strong>TCS34725 RGB sensor</strong> for visible-light measurements</li>
+<li><strong>MPX5700 pressure sensor</strong> for depth estimation</li>
+<li><strong>NTC thermistor</strong> for temperature measurement</li>
+<li><strong>Teensy 4.1 microcontroller</strong></li>
+<li>microSD storage for synchronized experimental data</li>
+</ul>
+<p>The vehicle used motor-driven vertical motion and proportional feedback control to autonomously reach commanded depths.</p>
+</section>
+<section id="my-contributions" class="level3">
+<h3 class="anchored" data-anchor-id="my-contributions">My Contributions</h3>
+<p>My work on the project included:</p>
+<ul>
+<li>Designing and assembling portions of the AUV mechanical structure and motor system</li>
+<li>Designing and soldering sensor and data-acquisition circuitry</li>
+<li>Integrating pressure, temperature, and RGB sensors with a <strong>Teensy 4.1</strong></li>
+<li>Developing pressure-sensor signal-conditioning circuitry</li>
+<li>Calibrating sensor voltage to water depth</li>
+<li>Implementing and testing proportional depth control</li>
+<li>Debugging electrical noise and sensor interference during motor operation</li>
+<li>Supporting field deployment and experimental data collection</li>
+<li>Processing experimental data in <strong>MATLAB</strong></li>
 </ul>
 </section>
-<section id="technical-report" class="level3">
-<h3 class="anchored" data-anchor-id="technical-report">Technical Report</h3>
-<p>The complete project report documents the vehicle design, sensor circuitry, calibration, autonomous control, coastal deployment, and experimental results.</p>
-<p><a href="files/Final_Report_William_Ortega.pdf" class="btn btn-primary" target="_blank">Open Full Project Report</a></p>
-<iframe src="files/Final_Report_William_Ortega.pdf" width="100%" height="800px" style="border: 1px solid #ddd; border-radius: 8px;">
-</iframe>
+<section id="pressure-measurement-signal-conditioning" class="level3">
+<h3 class="anchored" data-anchor-id="pressure-measurement-signal-conditioning">Pressure Measurement &amp; Signal Conditioning</h3>
+<p>The MPX5700 pressure sensor required signal conditioning before its output could be measured effectively by the Teensy’s ADC.</p>
+<p>I designed a <strong>two-stage MCP6002 op-amp circuit</strong> with a gain of approximately <strong>6.87</strong> to scale and offset the pressure-sensor output into the Teensy’s usable <strong>0.3–3.3 V ADC range</strong>.</p>
+<p>This prevented signal clipping while improving measurement resolution.</p>
+<p>The pressure sensor was then calibrated in water using a linear voltage-to-depth relationship.</p>
 </section>
-<section id="tools-skills" class="level3">
-<h3 class="anchored" data-anchor-id="tools-skills">Tools &amp; Skills</h3>
-<p><strong>Teensy 4.1 • MATLAB • Sensors • Circuit Design • Soldering • Data Acquisition • Feedback Control • Experimental Testing</strong></p>
+<section id="autonomous-depth-control" class="level3">
+<h3 class="anchored" data-anchor-id="autonomous-depth-control">Autonomous Depth Control</h3>
+<p>The AUV used <strong>proportional feedback control</strong> to reach commanded depths.</p>
+<p>Pressure measurements were converted to estimated depth, and the resulting error was used to command the vertical motors.</p>
+<p>During testing, we observed electrical interference in sensor measurements while the motors were operating. To isolate the source, we performed dedicated motor-off testing and modified the measurement sequence so that sensor readings were collected during <strong>motors-off holds</strong>.</p>
+<p>This improved measurement reliability during depth-controlled operation.</p>
+</section>
+<section id="data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="data-analysis">Data Analysis</h3>
+<p>Experimental data were processed in <strong>MATLAB</strong>.</p>
+<p>The analysis included:</p>
+<ul>
+<li>Sensor calibration</li>
+<li>Depth reconstruction from pressure measurements</li>
+<li>Per-channel RGB calibration</li>
+<li>Surface-reference normalization</li>
+<li>Beer–Lambert-based transmission analysis</li>
+<li>Comparison of red, green, and blue attenuation with depth</li>
+</ul>
+<p>During field testing, measurements showed <strong>more than 80% loss of surface light by approximately 3 m depth</strong>, with the red channel attenuating most rapidly.</p>
+</section>
+<section id="final-report" class="level3">
+<h3 class="anchored" data-anchor-id="final-report">Final Report</h3>
+<p>The complete experimental design, analysis, results, and discussion are available in the project report.</p>
+<p><a href="files/Final_Report_William_Ortega.pdf" class="btn btn-primary"><strong>View Final Report</strong></a></p>
+<iframe src="files/Final_Report_William_Ortega.pdf" width="100%" height="800px">
+</iframe>
 <hr>
 </section>
 </section>
-<section id="mobile-lectern-client-design-project" class="level2">
-<h2 class="anchored" data-anchor-id="mobile-lectern-client-design-project">Mobile Lectern — Client Design Project</h2>
-<p><strong>Harvey Mudd College | Fall 2025 | Team of 4</strong></p>
-<p>Worked with a faculty client to design a lightweight, portable lectern that could be rapidly assembled and disassembled for classroom use.</p>
+</section>
+<section id="mobile-lectern" class="level1">
+<h1>Mobile Lectern</h1>
+<section id="client-design-project" class="level3">
+<h3 class="anchored" data-anchor-id="client-design-project">Client Design Project</h3>
+<p><strong>Harvey Mudd College — Introduction to Engineering Design &amp; Manufacturing | Fall 2025 | Team of 4</strong></p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img src="images/lectern-final.jpg" alt="Final assembled mobile lectern." style="width:100%; height:300px; object-fit:contain; display:block; margin:auto;"></p>
-<p><em>Final assembled configuration.</em></p>
+<div style="text-align:center;">
+<img src="images/lectern-final.jpg" alt="Final assembled portable lectern." style="width:100%; height:280px; object-fit:contain; display:block; margin:auto;">
+<p style="margin-top:8px; color:#666; font-size:0.95rem;">
+Final assembled portable lectern.
+</p>
+</div>
 </div><div class="column" style="width:50%;">
-<p><img src="images/lectern-collapsed.jpg" alt="Collapsed mobile lectern." style="width:100%; height:300px; object-fit:contain; display:block; margin:auto;"></p>
-<p><em>Collapsed configuration for portability.</em></p>
+<div style="text-align:center;">
+<img src="images/lectern-collapsed.jpg" alt="Lectern in its collapsed configuration." style="width:100%; height:280px; object-fit:contain; display:block; margin:auto;">
+<p style="margin-top:8px; color:#666; font-size:0.95rem;">
+Lectern in its collapsed configuration.
+</p>
 </div>
 </div>
+</div>
+</section>
+<section id="project-overview-1" class="level3">
+<h3 class="anchored" data-anchor-id="project-overview-1">Project Overview</h3>
+<p>My team designed and fabricated a lightweight, portable lectern for a Harvey Mudd faculty client.</p>
+<p>The primary design requirements included:</p>
+<ul>
+<li>Rapid assembly and disassembly</li>
+<li>Easy transportation and storage</li>
+<li>Sufficient strength for classroom use</li>
+<li>Low manufacturing cost</li>
+<li>Simple and repeatable operation</li>
+</ul>
+<p>The resulting design, called <strong>Accordion Stretch</strong>, used a collapsible five-panel structure with removable wings and grip surfaces.</p>
+</section>
 <section id="design-process" class="level3">
 <h3 class="anchored" data-anchor-id="design-process">Design Process</h3>
+<p>Our design process included:</p>
 <ul>
-<li>Interviewed the client to identify functional and human-factors requirements</li>
-<li>Translated stakeholder needs into engineering specifications</li>
-<li>Developed and evaluated multiple design concepts</li>
-<li>Created SolidWorks models and engineering drawings</li>
-<li>Fabricated and tested iterative prototypes</li>
-<li>Evaluated setup time, portability, durability, and usability</li>
+<li>Translating client needs into measurable engineering requirements</li>
+<li>Generating and evaluating multiple concepts</li>
+<li>Creating CAD models in <strong>SolidWorks</strong></li>
+<li>Building and testing physical prototypes</li>
+<li>Iterating based on usability and structural testing</li>
+<li>Developing manufacturing documentation for the final design</li>
 </ul>
 </section>
 <section id="final-design" class="level3">
 <h3 class="anchored" data-anchor-id="final-design">Final Design</h3>
-<p>The final design:</p>
+<p>The final prototype achieved:</p>
 <ul>
-<li>Achieved an average setup time of approximately <strong>1.6 seconds</strong></li>
-<li>Supported loads greater than <strong>12 lb</strong></li>
-<li>Used a collapsible five-panel structure</li>
-<li>Included removable support wings and grip surfaces</li>
-<li>Was produced for approximately <strong>$24 in prototype materials</strong></li>
+<li>Approximately <strong>1.6-second setup time</strong></li>
+<li>Support for loads greater than <strong>12 lb</strong></li>
+<li>Compact collapsible geometry</li>
+<li>Five-panel construction</li>
+<li>Removable support wings</li>
+<li>Approximately <strong>$24 in prototype material cost</strong></li>
 </ul>
+<p>The final deliverables included a <strong>SolidWorks drawing package, bill of materials, and manufacturing process router</strong>.</p>
 </section>
-<section id="engineering-drawing-package" class="level3">
-<h3 class="anchored" data-anchor-id="engineering-drawing-package">Engineering Drawing Package</h3>
-<p>The final SolidWorks drawing package documents the complete assembly, individual panels, support wings, fabrication details, process routing, and bill of materials.</p>
-<p><a href="files/Mobile_Lectern_Drawings.pdf" class="btn btn-primary" target="_blank">Open Full Drawing Package</a></p>
-<iframe src="files/Mobile_Lectern_Drawings.pdf" width="100%" height="800px" style="border: 1px solid #ddd; border-radius: 8px;">
+<section id="engineering-drawings" class="level3">
+<h3 class="anchored" data-anchor-id="engineering-drawings">Engineering Drawings</h3>
+<p><a href="files/Mobile_Lectern_Drawings.pdf" class="btn btn-primary"><strong>View Drawing Package</strong></a></p>
+<iframe src="files/Mobile_Lectern_Drawings.pdf" width="100%" height="800px">
 </iframe>
-</section>
-<section id="tools-skills-1" class="level3">
-<h3 class="anchored" data-anchor-id="tools-skills-1">Tools &amp; Skills</h3>
-<p><strong>SolidWorks • Mechanical Design • Engineering Drawings • Prototyping • Fabrication • Client Communication • Design Testing</strong></p>
 <hr>
 </section>
 </section>
-<section id="hammer-machining-project" class="level2">
-<h2 class="anchored" data-anchor-id="hammer-machining-project">Hammer — Machining Project</h2>
+<section id="machinists-hammer" class="level1">
+<h1>Machinist’s Hammer</h1>
+<section id="manufacturing-project" class="level3">
+<h3 class="anchored" data-anchor-id="manufacturing-project">Manufacturing Project</h3>
 <p><strong>Harvey Mudd College | Fall 2025</strong></p>
-<p>Fabricated a functional hammer from raw stock while developing precision machining and manufacturing skills.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/hammer-final.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption>Finished machined hammer.</figcaption>
+<figcaption>Completed machinist’s hammer manufactured from raw steel and nylon stock.</figcaption>
 </figure>
 </div>
-<p><em>Completed hammer fabricated from raw stock using manual machining processes.</em></p>
-<section id="my-work-1" class="level3">
-<h3 class="anchored" data-anchor-id="my-work-1">My Work</h3>
+</section>
+<section id="project-overview-2" class="level3">
+<h3 class="anchored" data-anchor-id="project-overview-2">Project Overview</h3>
+<p>I manufactured a machinist’s hammer from raw steel and nylon stock using manual machining processes.</p>
+<p>The project emphasized precision manufacturing, interpretation of engineering drawings, proper machine setup, and process planning.</p>
+</section>
+<section id="manufacturing-experience" class="level3">
+<h3 class="anchored" data-anchor-id="manufacturing-experience">Manufacturing Experience</h3>
+<p>I used:</p>
 <ul>
-<li>Machined hammer components using a mill and lathe</li>
-<li>Used a bandsaw and other shop equipment for stock preparation</li>
-<li>Worked from engineering drawings and specified dimensions</li>
-<li>Maintained required dimensional tolerances during fabrication</li>
-<li>Evaluated hardface hardness requirements after machining</li>
+<li>Manual mill</li>
+<li>Manual lathe</li>
+<li>Bandsaw</li>
+<li>Drilling</li>
+<li>Tapping</li>
+<li>Heat treatment</li>
+<li>Tempering</li>
+<li>Precision measurement tools</li>
 </ul>
-</section>
-<section id="tools-skills-2" class="level3">
-<h3 class="anchored" data-anchor-id="tools-skills-2">Tools &amp; Skills</h3>
-<p><strong>Milling • Turning • Lathe • Bandsaw • Engineering Drawings • Measurement • Manufacturing</strong></p>
+<p>I calibrated and operated manual mills and lathes to manufacture components to <strong>thousandths-of-an-inch dimensional specifications</strong>, following engineering drawings and a defined process router.</p>
+<p>The project strengthened my experience with <strong>manual machining, tolerances, fabrication, and manufacturing processes</strong>.</p>
 
 
-</section>
 </section>
 </section>
 
